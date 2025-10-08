@@ -4,9 +4,9 @@ int main(){
 
     int arr[5] = {10, 12, 30, 25, 40};
 
-    int secondmax = arr[0];
-    int thirdmax = arr[0];
-    int max = arr[0];
+    int secondmax = INT_MIN;
+    int thirdmax = INT_MIN;
+    int max = INT_MIN;
 
     for(int i = 0; i < 5; i++){
         if(arr[i] > max){
