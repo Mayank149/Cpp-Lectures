@@ -1,0 +1,5 @@
+# Ignore compiled Windows executables
+*.exe
+
+# Ignore VS Code workspace settings and folders
+.vscode/
