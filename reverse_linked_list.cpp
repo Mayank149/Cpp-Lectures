@@ -15,13 +15,20 @@ class Node{
 
 int main()
 {
-    Node* head = new Node(20);
+    Node* head = new Node(0);
     Node* cur = head;
     int arr[5] = {1,2,3,4,5};
 
     for(int i = 0; i < 5; i++){
         Node* n = new Node(arr[i]);
         cur->next = n;
+        cur = cur->next;
+    }
+
+    cout << "Original:- \n";
+    cur = head;
+    while(cur){
+        cout << cur->data << "->";
         cur = cur->next;
     }
 
@@ -34,7 +41,7 @@ int main()
         prev = cur;
         cur = next;
     }
-
+    cout << "\nreversed:- \n";
     while(prev){
         cout << prev->data << "->";
         prev = prev->next;
