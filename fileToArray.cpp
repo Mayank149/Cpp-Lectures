@@ -25,6 +25,7 @@ int main()
     for(int ele : arr){
         cout << ele << " ";
     }
+    ifile.close();
 
     return 0;
 }
