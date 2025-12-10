@@ -15,5 +15,6 @@ class student{
 int main()
 {
     student s1;
+    student* s2 = new student();
     return 0;
 }
